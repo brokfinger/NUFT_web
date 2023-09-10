@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Підрахунок кількості рядків</title>
+</head>
+<body>
+    <h1>Підрахунок кількості рядків</h1>
+    <form method="post">
+        <textarea name="text" rows="10" cols="50" placeholder="Введіть текст"></textarea><br>
+        <input type="submit" value="Підрахувати кількість рядків">
+    </form>
+    {% if line_count is not None %}
+    <p>Кількість рядків: {{ line_count }}</p>
+    {% endif %}
+</body>
+</html>
